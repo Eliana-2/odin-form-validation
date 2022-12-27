@@ -2,12 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Form Validation</title>
+    <script src="main.js" type="module" defer></script>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <div class="form-container">
+      <form action="" method="post">
+        <div class="input-container">
+          <label for="email">Email</label>
+          <input type="email" id="email" class="input" name="email">
+        </div>
+        <div class="input-container">
+          <label for="country">Country</label>
+          <input type="text" id="country" class="input" name="country">
+        </div>
+        <div class="input-container">
+          <label for="zip_code">Zip Code</label>
+          <input type="number" id="zip_code" class="input" name="zip_code">
+        </div>
+        <div class="input-container">
+          <label for="password">Password</label>
+          <input type="password" id="password" class="input" name="password">
+        </div>
+        <button class="submit-button" type="submit">Submit</button>
+      </form>
+    </div>
   </body>
 </html>
