@@ -19,13 +19,12 @@ form {
   background-color: rgb(253, 223, 228);
   border: 2px solid black;
   border-radius: 5px;
-  height: 420px;
-  width: 320px;
+  height: 560px;
+  width: 420px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .input-container {
@@ -35,13 +34,28 @@ form {
 }
 
 .input {
-  height: 24px;
-  width: 180px;
+  outline: none;
+  height: 32px;
+  width: 240px;
+  box-sizing: border-box;
+  padding: 0px 4px;
+  font-size: 1.1275rem;
+  border-width: 1.5px;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+.error-message {
+  color: red;
+  height: 16px;
 }
 
 .submit-button {
-  height: 28px;
-  width: 96px;
+  height: 36px;
+  width: 120px;
   border-radius: 4px;
-  background-color:azure
+  background-color:azure;
+  font-size: 1.1275rem;
 }
