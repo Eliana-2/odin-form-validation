@@ -19,12 +19,20 @@ form {
   background-color: rgb(253, 223, 228);
   border: 2px solid black;
   border-radius: 5px;
-  height: 560px;
+  height: 700px;
   width: 420px;
   display: flex;
   flex-direction: column;
+  gap: 2px;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0px 90px;
+
+}
+
+.form-header {
+  padding-bottom: 30px;
 }
 
 .input-container {
@@ -49,7 +57,8 @@ form {
 
 .error-message {
   color: red;
-  height: 16px;
+  height: 3rem;
+  font-size: 0.9rem
 }
 
 .submit-button {
